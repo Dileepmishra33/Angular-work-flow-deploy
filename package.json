@@ -1,0 +1,23 @@
+{
+  "name": "angularjs-github-actions-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx http-server src -p 8080 -c-1",
+    "lint": "eslint . --ext .js,.html",
+    "test": "jest --runInBand",
+    "ci": "npm run lint && npm test"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "angular": "^1.8.3",
+    "angular-mocks": "^1.8.3",
+    "babel-jest": "^29.0.0",
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "http-server": "^14.1.1",
+    "jest": "^29.0.0"
+  }
+}

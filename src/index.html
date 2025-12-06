@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS Github Actions Starter</title>
+  <script src="https://unpkg.com/angular@1.8.3/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/HelloController.js"></script>
+</head>
+<body>
+  <div ng-controller="HelloController as vm">
+    <h1>{{ vm.title }}</h1>
+    <input ng-model="vm.name" placeholder="Enter name">
+    <button ng-click="vm.greet()">Greet</button>
+    <p ng-if="vm.greeting">{{ vm.greeting }}</p>
+  </div>
+</body>
+</html>
